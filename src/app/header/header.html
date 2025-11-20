@@ -1,0 +1,33 @@
+<nav class="nav">
+    <h1><a routerLink="./">E-COMM</a></h1>
+
+    @if(menuType==='default'){
+    <div class="nav-search">
+        <input type="text" placeholder="search the product">
+        <button>search</button>
+    </div>
+    }
+
+
+    @switch (menuType) {
+    @case ('default') {
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/seller-auth">Seller</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a>
+    </ul>
+    }
+    }
+
+    @switch (menuType) {
+    @case ('seller') {
+    <ul>
+        <li><a routerLink="/seller-add-product">Add product</a></li>
+        <li><a routerLink="/seller-home"> List</a></li>
+        <li><a (click)="logoutSeller()" href="#">Logout</a></li>
+        <li><a href="#">{{sellerName | titlecase}}</a>
+    </ul>
+    }
+    }
+</nav>

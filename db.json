@@ -1,0 +1,54 @@
+{
+  "seller": [
+    {
+      "id": "e77f",
+      "name": "Swastik Ror",
+      "email": "swastik@gmail.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "b98d",
+      "name": "Lakshit Rajput",
+      "password": "1234",
+      "email": "lakshitrajput8218@gmail.com"
+    },
+    {
+      "id": "7785",
+      "name": "tanisha",
+      "password": "tanisha123",
+      "email": "tanisha@gmail.com"
+    },
+    {
+      "id": "3a4e",
+      "name": "jiya",
+      "password": "jiya123",
+      "email": "jiya@gmail.com"
+    },
+    {
+      "id": "2415",
+      "name": "anuj",
+      "password": "anuj123",
+      "email": "anuj@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "06b0",
+      "name": "S23",
+      "price": "50000",
+      "color": "cream",
+      "category": "samsung",
+      "description": "Mobile",
+      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg"
+    },
+    {
+      "id": "3389",
+      "name": "Xs gold",
+      "price": "22000",
+      "color": "golden",
+      "category": "Apple",
+      "description": "Mobile",
+      "image": "https://www.bing.com/images/search?view=detailV2&ccid=StaU3%2bgD&id=D3DE4D8B613A6C809DB801AD3C8A4BEAB01FC0FC&thid=OIP.StaU3-gDH5p53okYhW8fRwHaE8&mediaurl=https%3a%2f%2fi.blogs.es%2f76f643%2fsamsung-galaxy-m31-04%2f840_560.jpg&exph=553&expw=829&q=m31&FORM=IRPRST&ck=F4433311148E47F4DB29553D89A925BC&selectedIndex=22&itb=0&ajaxhist=0&ajaxserp=0"
+    }
+  ]
+}

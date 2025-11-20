@@ -33,13 +33,13 @@
   ],
   "products": [
     {
-      "id": "06b0",
-      "name": "S23",
+      "name": "S24",
       "price": "50000",
       "color": "cream",
       "category": "samsung",
       "description": "Mobile",
-      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg"
+      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg",
+      "id": "06b0"
     },
     {
       "id": "3389",

@@ -28,6 +28,7 @@ export class Product {
   }
 
   updateProduct(product:product){
+       
     return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product)
   }
 }

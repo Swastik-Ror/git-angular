@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../services/product';
 import { product } from '../data-types';
 
@@ -14,7 +14,8 @@ import { product } from '../data-types';
 
 export class SellerUpdateProduct {
   productData: undefined | product;
-  constructor(private route: ActivatedRoute, private product:Product){}
+  productMessage: undefined | string;
+  constructor(private route: ActivatedRoute, private product:Product, private Route:Router){}
 
   ngOnInit(): void{
     let productId=this.route.snapshot.paramMap.get('id');
@@ -28,8 +29,22 @@ export class SellerUpdateProduct {
 
   submit(data:product){
     console.warn(data);
-    
+    if(this.productData){
+      data.id= this.productData.id;
+    }
+    this.product.updateProduct(data).subscribe((result)=>{
+      if(result){
+        this.productMessage="product updated successfully"
+      
+      }
+    });
 
+    setTimeout(()=>{
+      this.productMessage=undefined;
+      this.Route.navigate(['/seller-home'])
+    },3000);
+   
+  
   }
 
 }

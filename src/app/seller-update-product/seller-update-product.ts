@@ -22,7 +22,7 @@ export class SellerUpdateProduct {
     console.warn(productId);
      productId && this.product.getProduct(productId).subscribe((data)=>{
       console.warn(data);
-      this.productData=data;  
+      this.productData=data; 
       
     })
   }
@@ -32,12 +32,13 @@ export class SellerUpdateProduct {
     if(this.productData){
       data.id= this.productData.id;
     }
+
     this.product.updateProduct(data).subscribe((result)=>{
       if(result){
         this.productMessage="product updated successfully"
-      
       }
     });
+
 
     setTimeout(()=>{
       this.productMessage=undefined;

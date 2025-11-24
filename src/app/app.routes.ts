@@ -9,9 +9,27 @@ import { SellerUpdateProduct } from './seller-update-product/seller-update-produ
 
 
 export const routes: Routes = [
-    {path:'', component:Home},
-    { path:'seller-auth',component:SellerAuth},
-    {path:'seller-home', component:SellerHome,canActivate:[SellerAuthGuard]},
-    {path:'seller-add-product', component:SellerAddProduct,canActivate:[SellerAuthGuard]},
-    {path:'seller-update-product/:id', component:SellerUpdateProduct,canActivate:[SellerAuthGuard]}
+    {
+        path: '',
+        component: Home
+    },
+    {
+        path: 'seller-auth',
+        component: SellerAuth
+    },
+    {
+        path: 'seller-home',
+        component: SellerHome,
+        canActivate: [SellerAuthGuard]
+    },
+    {
+        path: 'seller-add-product',
+        component: SellerAddProduct,
+        canActivate: [SellerAuthGuard]
+    },
+    {
+        path: 'seller-update-product/:id',
+        component: SellerUpdateProduct,
+        canActivate: [SellerAuthGuard]
+    }
 ];

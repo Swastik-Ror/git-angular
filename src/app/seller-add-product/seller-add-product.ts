@@ -4,6 +4,8 @@ import { Product } from '../services/product';
 import { product } from '../data-types';
 import {Router} from '@angular/router'
 
+
+
 @Component({
   selector: 'app-seller-add-product',
   imports: [FormsModule],
@@ -26,9 +28,13 @@ export class SellerAddProduct {
           this.route.navigate(['/seller-home'])
         }
 
-        setTimeout(()=>(
-          this.addProductMessage=undefined),3000);
+        setTimeout(()=>{
+          this.addProductMessage=undefined},3000);
         });
               
+
   }
 }
+
+
+ 

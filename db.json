@@ -33,22 +33,22 @@
   ],
   "products": [
     {
-      "name": "S24",
-      "price": "50000",
-      "color": "cream",
-      "category": "samsung",
+      "name": "S23",
+      "price": "₹50000",
+      "color": "Cream",
+      "category": "Samsung",
       "description": "Mobile",
-      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg",
+      "image": "https://m.media-amazon.com/images/I/51L8W6d-DNL._SL1500_.jpg",
       "id": "06b0"
     },
     {
-      "id": "3389",
       "name": "Xs gold",
-      "price": "22000",
-      "color": "golden",
+      "price": "₹22000",
+      "color": "Golden",
       "category": "Apple",
       "description": "Mobile",
-      "image": "https://www.bing.com/images/search?view=detailV2&ccid=StaU3%2bgD&id=D3DE4D8B613A6C809DB801AD3C8A4BEAB01FC0FC&thid=OIP.StaU3-gDH5p53okYhW8fRwHaE8&mediaurl=https%3a%2f%2fi.blogs.es%2f76f643%2fsamsung-galaxy-m31-04%2f840_560.jpg&exph=553&expw=829&q=m31&FORM=IRPRST&ck=F4433311148E47F4DB29553D89A925BC&selectedIndex=22&itb=0&ajaxhist=0&ajaxserp=0"
+      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg",
+      "id": "3389"
     }
   ]
 }

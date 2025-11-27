@@ -1,0 +1,57 @@
+<nav class="nav">
+    <h1><a routerLink="/">E-COMM</a></h1>
+
+    @if(menuType==='default'){
+    <div class="nav-search">
+        <input type="text"
+        #searchInput
+         (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="search the product">
+        <button (click)="submitSearch(searchInput.value)" >search</button>
+        @if(searchResult){
+        <ul class="suggested-result">
+            @for (item of searchResult; track item){
+            <li>
+                <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a> 
+            </li>
+        }
+        </ul>
+    }
+    
+    </div>
+    }
+
+
+    @switch (menuType) {
+    @case ('default') {
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/seller-auth">Seller</a></li>
+        <li><a routerLink="/user-auth">LogIn/SignUp</a></li>
+        <li><a href="#">Cart</a>
+    </ul>
+    }
+    }
+
+    @switch (menuType) {
+    @case ('user') {
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/seller-auth">Seller</a></li>
+        <li><a routerLink="/user-auth">{{userName|titlecase}}</a></li>
+        <li><a (click)="userLogout()">LogOut</a></li>
+        <li><a href="#">Cart</a>
+    </ul>
+    }
+    }
+
+    @switch (menuType) {
+    @case ('seller') {
+    <ul>
+        <li><a routerLink="/seller-add-product">Add product</a></li>
+        <li><a routerLink="/seller-home"> List</a></li>
+        <li><a (click)="logoutSeller()" href="#">Logout</a></li>
+        <li><a href="#">{{sellerName | titlecase}}</a>
+    </ul>
+    }
+    }
+</nav>

@@ -1,0 +1,128 @@
+{
+  "seller": [
+    {
+      "id": "e77f",
+      "name": "Swastik Ror",
+      "email": "swastik@gmail.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "b98d",
+      "name": "Lakshit Rajput",
+      "password": "1234",
+      "email": "lakshitrajput8218@gmail.com"
+    },
+    {
+      "id": "7785",
+      "name": "tanisha",
+      "password": "tanisha123",
+      "email": "tanisha@gmail.com"
+    },
+    {
+      "id": "3a4e",
+      "name": "jiya",
+      "password": "jiya123",
+      "email": "jiya@gmail.com"
+    },
+    {
+      "id": "2415",
+      "name": "anuj",
+      "password": "anuj123",
+      "email": "anuj@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "name": "S23",
+      "price": "₹50000",
+      "color": "cream",
+      "category": "samsung",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.rMPVMcdZR6wTB1AGRTY9JwHaHa?w=211&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "id": "06b0"
+    },
+    {
+      "name": "Xs gold",
+      "price": "₹22000",
+      "color": "golden",
+      "category": "Apple",
+      "description": "Mobile",
+      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg",
+      "id": "3389"
+    },
+    {
+      "name": "I Phone 12",
+      "price": "₹54,000",
+      "color": "Green",
+      "category": "Apple",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.UKa7qAze3zzAbSiDhp1uZwHaHa?w=194&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "id": "07bb"
+    },
+    {
+      "name": "Men's Shoes",
+      "price": "8000",
+      "color": "Blue",
+      "category": "Nike Brand",
+      "description": "Shoes",
+      "image": "https://www.bing.com/th/id/OIP.DFnAaKP_JHhHntIx6N__7gHaGX?w=234&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "id": "8774"
+    },
+    {
+      "name": "Men's Watches",
+      "price": "25000",
+      "color": "Silver",
+      "category": "Rollex brand",
+      "description": "Watch",
+      "image": "https://www.bing.com/th/id/OIP.awaFqdcKbD3O4VkAjeDetgHaHa?w=200&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "id": "ccdc"
+    },
+    {
+      "name": "Men's Watch",
+      "price": "7000",
+      "color": "Black",
+      "category": "Fastrack Brand",
+      "description": "Watch",
+      "image": "https://www.bing.com/th/id/OIP.jIqks7aYaKdAPL9bP14EjgHaHg?w=214&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "id": "990a"
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "anil123",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "peter123",
+      "id": 2
+    },
+    {
+      "name": "shelly",
+      "email": "shelly@user.com",
+      "password": "shelly123",
+      "id": 3
+    },
+    {
+      "name": "shelly",
+      "email": "shelly@user.com",
+      "password": "shelly122",
+      "id": 4
+    },
+    {
+      "name": "shelly",
+      "email": "shelly@user.com",
+      "password": "shelly123",
+      "id": 5
+    },
+    {
+      "name": "S23",
+      "email": "shelly@user.com",
+      "password": "123",
+      "id": 6
+    }
+  ]
+}

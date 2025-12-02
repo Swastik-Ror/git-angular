@@ -1,0 +1,39 @@
+<div class="my-orders">
+    <h1>My Orders</h1>
+    <div class="row">
+       <div class="col-sm-2">
+        <span>Order Id</span>
+       </div> 
+       <div class="col-sm-2">
+        <span>Price</span>
+       </div> 
+       <div class="col-sm-2">
+        <span>Status</span>
+       </div> 
+       <div class="col-sm-2">
+        <span>Action</span>
+       </div> 
+    </div>
+    @for(order of orderData; track order ){
+    <div class="row order-data">
+       <div class="col-sm-2">
+        <img class="order-img" src="https://th.bing.com/th?q=Cart+Icon.png&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+       </div> 
+       <div class="col-sm-2">
+        <span>#{{order.id}}</span>
+       </div> 
+       <div class="col-sm-2">
+        <span>{{order.totalPrice}}</span>
+       </div> 
+       <div class="col-sm-2">
+        <span>In Progress</span>
+       </div> 
+       <div class="col-sm-2">
+        <span><button  class="form-button" (click)="cancelOrder(order.id)" >Cancel Order</button></span>
+       </div> 
+    </div>
+   }
+    
+    
+
+</div>

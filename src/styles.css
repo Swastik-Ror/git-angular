@@ -3,7 +3,7 @@
 
 body{
     font-family: sans-serif;
-
+   
 }
 
 .container{
@@ -35,7 +35,8 @@ cursor: pointer;
 
 
 .message-p{
-    color:green
+    color:green;
+    text-align: center;
 }
 
 
@@ -54,5 +55,10 @@ cursor: pointer;
     font-size: 12px;
     margin-top: -20px;
     text-align: start;
+}
+
+.error-p{
+    color: red;
+    
 }
  

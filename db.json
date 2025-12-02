@@ -34,7 +34,7 @@
   "products": [
     {
       "name": "S23",
-      "price": "₹50000",
+      "price": "50000",
       "color": "cream",
       "category": "samsung",
       "description": "Mobile",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Xs gold",
-      "price": "₹22000",
+      "price": "20000",
       "color": "golden",
       "category": "Apple",
       "description": "Mobile",
@@ -52,7 +52,7 @@
     },
     {
       "name": "I Phone 12",
-      "price": "₹54,000",
+      "price": "54,000",
       "color": "Green",
       "category": "Apple",
       "description": "Mobile",
@@ -80,11 +80,29 @@
     {
       "name": "Men's Watch",
       "price": "7000",
-      "color": "Black",
+      "color": "Navy Blue",
       "category": "Fastrack Brand",
       "description": "Watch",
       "image": "https://www.bing.com/th/id/OIP.jIqks7aYaKdAPL9bP14EjgHaHg?w=214&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
       "id": "990a"
+    },
+    {
+      "name": " Sony Headphones",
+      "price": "3400",
+      "color": "black",
+      "category": "Sony",
+      "description": "headphone",
+      "image": "https://th.bing.com/th/id/OIP.H8rRfXMFSfNuV1sHkU9cLAHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+      "id": "g3_mogw"
+    },
+    {
+      "name": "Apple Earphone",
+      "price": "1200",
+      "color": "white",
+      "category": "Apple Brand",
+      "description": "Apple wired earphone with lightning port",
+      "image": "https://th.bing.com/th/id/OIP.zSE19QOIgTZMG1TSjLI_bQHaHI?w=186&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "id": "iZC366_"
     }
   ],
   "users": [
@@ -105,24 +123,90 @@
       "email": "shelly@user.com",
       "password": "shelly123",
       "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "name": "I Phone 12",
+      "price": "₹54,000",
+      "color": "Green",
+      "category": "Apple",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.UKa7qAze3zzAbSiDhp1uZwHaHa?w=194&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "quantity": 1,
+      "productId": "07bb",
+      "userId": null,
+      "id": 7
     },
     {
-      "name": "shelly",
-      "email": "shelly@user.com",
-      "password": "shelly122",
-      "id": 4
-    },
-    {
-      "name": "shelly",
-      "email": "shelly@user.com",
-      "password": "shelly123",
-      "id": 5
+      "name": "Xs gold",
+      "price": "₹22000",
+      "color": "golden",
+      "category": "Apple",
+      "description": "Mobile",
+      "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg",
+      "quantity": 1,
+      "productId": "3389",
+      "userId": null,
+      "id": 8
     },
     {
       "name": "S23",
+      "price": "₹50000",
+      "color": "cream",
+      "category": "samsung",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.rMPVMcdZR6wTB1AGRTY9JwHaHa?w=211&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "quantity": 1,
+      "productId": "06b0",
+      "userId": null,
+      "id": 12
+    },
+    {
+      "name": "I Phone 12",
+      "price": "54,000",
+      "color": "Green",
+      "category": "Apple",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.UKa7qAze3zzAbSiDhp1uZwHaHa?w=194&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "quantity": 1,
+      "userId": 3,
+      "productId": "07bb",
+      "id": 13
+    },
+    {
+      "name": " Sony Headphones",
+      "price": "3400",
+      "color": "black",
+      "category": "Sony",
+      "description": "headphone",
+      "image": "https://th.bing.com/th/id/OIP.H8rRfXMFSfNuV1sHkU9cLAHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+      "quantity": 1,
+      "userId": 2,
+      "productId": "g3_mogw",
+      "id": 14
+    },
+    {
+      "name": "Apple Earphone",
+      "price": "1200",
+      "color": "white",
+      "category": "Apple Brand",
+      "description": "Apple wired earphone with lightning port",
+      "image": "https://th.bing.com/th/id/OIP.zSE19QOIgTZMG1TSjLI_bQHaHI?w=186&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "quantity": 1,
+      "userId": 2,
+      "productId": "iZC366_",
+      "id": 15
+    }
+  ],
+  "orders": [
+    {
       "email": "shelly@user.com",
-      "password": "123",
-      "id": 6
+      "address": "RUTUR",
+      "contact": "897978067967",
+      "totalPrice": 4700,
+      "userId": 2,
+      "id": 1
     }
   ]
 }

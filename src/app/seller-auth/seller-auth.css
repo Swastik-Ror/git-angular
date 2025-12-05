@@ -3,7 +3,6 @@
 }
 
 .sign-up h1, .log-in h1 {
-    margin-top: 80px;
     margin-bottom: 50px;
     color: blueviolet;
 }
@@ -11,13 +10,77 @@
 
 .auth-toggle-link{
     cursor:pointer;
-    color:blueviolet;
-    font-size: 14px;
-    margin-top: 20px;
-    text-align: left;
+    font-size: 16px;
+    text-align: center;
 }
 
 .error-p{
     color: red;
     font-size: 14px;
 }
+.commons-form a{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.sign-up,.log-in{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.row{
+  background-color:#ffffffcc;
+    margin-left: 23%;
+    margin-right: 23%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.546);
+    overflow: hidden;
+}
+
+.commons-form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 10%;
+}
+
+.text-wrper{
+    padding:20px;
+ 
+}
+
+.bg-c{
+    background-color: rgb(6, 56, 173);
+    display: flex;
+    align-items: center ;
+}
+
+.text-wrper p{
+ font-size: 26px;
+ color:white
+}
+
+.text-wrper>h1{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 37px;
+}
+
+form img{
+    width: 150px;
+}
+
+form h1{
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+

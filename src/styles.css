@@ -3,33 +3,44 @@
 
 body{
     font-family: sans-serif;
-   
 }
 
 .container{
     margin-left: 5%;
     margin-right: 5%;
+    padding: 0;
 }
 
-.common-form{
+
+
+.common-form {
     display: flex;
     text-align: center;
-    margin: auto;
     flex-direction: column;
-    width:300px;
+    width: 400px;
+    background: #ffffffcc;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.546);
 }
+
 
 .form-input{
     height: 35px;
     margin-bottom: 20px;
     padding-left: 10px;
     border: 1px solid blueviolet;
+    border-radius: 10px;
     color: blueviolet;
 }
 
 .form-button{
+margin-top: 12px;
 height: 35px;
 border: 1px solid blueviolet;
+border-radius: 10px;
 cursor: pointer;
 }
 
@@ -58,7 +69,28 @@ cursor: pointer;
 }
 
 .error-p{
-    color: red;
-    
+    color: red;  
 }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+app-footer, .footer {
+  margin-top: auto;
+} 
+
+
+.label-input{
+    text-align: start;
+}
+
  

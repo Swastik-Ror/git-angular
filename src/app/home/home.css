@@ -4,9 +4,6 @@
     width: 100%
 }
 
-
-
-
 .product-list-wrpr{
     margin-top: 80px ;
     margin-bottom: 80px;
@@ -45,4 +42,13 @@
     display: flex;
     justify-content: space-between;
     padding: 8px;
+}
+
+.product-footer a{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 50px;
 }

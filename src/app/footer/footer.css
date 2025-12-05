@@ -4,27 +4,27 @@ ul{
 }
 
 .footer{
-  
     padding: 10px;
     text-align: center;
-    position: fixed;
     bottom: 0;
     right: 0;
     left:0;
-    background-color: #fff;
+    background-color: rgb(4, 31, 94);
+    
 }
 .footer p{
-    padding: 10px;
+    padding-top: 10px;
     text-align: center;
+    color:rgba(211, 210, 210, 0.693);
 }
 
-.footer ul{
+/* .footer ul{
  list-style-type: none;
  display: flex;
  justify-content: space-between;
-}
+} */
 
 .footer ul li a{
-    color:blueviolet;
+    color:rgba(211, 210, 210, 0.693);
     text-decoration: none;
 }

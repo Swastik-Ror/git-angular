@@ -1,30 +1,104 @@
 <div class="seller-auth">
-   @if (!showLogin) { <div  class="sign-up">
-        <h1>Sign-Up</h1>
-        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
-            <input class="form-input" type="text" ngModel name="name" placeholder="enter name">
-            <input class="form-input" type="password" ngModel name="password" placeholder="enter password">
-            <input class="form-input" type="email" ngModel name="email" placeholder="enter email">
-            <button class="form-button">SignUp</button>
-            <a class="auth-toggle-link" (click)="openLogin()">Already Have Account? click  to login</a>
-        </form>
+
+    @if (!showLogin) {
+    <div class="sign-up">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="leftForm-wrper">
+                    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="commons-form">
+                         <div class="img">
+                        <img src="assets/images/yo-kart-copy.png" alt="logo-img" > 
+                        </div>
+                        <h1>Sign-Up</h1>
+                        <label for="name" class="label-input">UserName:</label>
+                        <input class="form-input" type="text" ngModel name="name" placeholder="enter name" />
+                        <label for="password" class="label-input">Password:</label>
+                        <input class="form-input" type="password" ngModel name="password" placeholder="enter password"
+                            #password="ngModel" required minlength="4" maxlength="10" />
+                        <p class="invalid-input">
+                            @if(password.invalid && password.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <label for="email" class="label-input">Email:</label>
+                        <input class="form-input" type="email" ngModel name="email" placeholder="enter email"
+                            #email="ngModel" required email />
+                        <p class="invalid-input">
+                            @if(email.invalid && email.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <button [disabled]="sellerSignUp.invalid" class="form-button">SignUp</button>
+                        <p class="auth-toggle-link">Already Have Account? <a (click)="openLogin()">click to login</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-6 bg-c">
+                <div class="text-wrper">
+                    <h1>Welcome to Yo-Kart</h1>
+                    <P>Buy. Sell. Earn. Grow. <br>
+                        Turn your products into profit — sign up now.
+                    </P>
+                </div>
+            </div>
+
+        </div>
     </div>
-}
+    }
+
+
 
 
 
     <!-- login -->
 
-    @if (showLogin) {<div  class="log-in">
-        <h1>Seller LogIn</h1>
-        <p class="error-p">{{authError}}</p>
-        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
-            <input class="form-input" type="email" ngModel name="email" placeholder="enter email">
-            <input class="form-input" type="password" ngModel name="password" placeholder="enter password">
-            <button class="form-button">LogIn</button>
-            <a class="auth-toggle-link" (click)="openSignUp()">Don't Have Account? click  to SignUp</a>
-        </form>
+    @if (showLogin)
+    {<div class="log-in">
+        <div class="row">
+            <div class="col-sm-6 bg-c">
+                <div class="text-wrper">
+                    <h1>Hello!!<br> Welcome Back </h1>
+                    <P>
+                      Your next sale is just a click away.
+                    </P>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-wrper">
+                    <p class="error-p">{{authError}}</p>
+                    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="commons-form">
+                         <div class="img">
+                        <img src="assets/images/yo-kart-copy.png" alt="logo-img" > 
+                        </div>
+                        <h1>LogIn</h1>
+                        <label for="email" class="label-input">Email:</label>
+                        <input class="form-input" type="email" ngModel name="email" placeholder="enter email"
+                            #email="ngModel" required email />
+                        <p class="invalid-input">
+                            @if(email.invalid && email.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <label for="password" class="label-input">Password:</label>
+                        <input class="form-input" type="password" ngModel name="password" placeholder="enter password"
+                            #password="ngModel" required minlength="4" maxlength="10" />
+                        <p class="invalid-input">
+                            @if(password.invalid && password.touched){
+                            <span>Please Enter Valid Input</span>
+
+                            }
+                        </p>
+                        <button [disabled]="sellerLogin.invalid" class="form-button">LogIn</button>
+                        <p class="auth-toggle-link">Don't Have Account? <a (click)="openSignUp()"> click to SignUp</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-}
+    }
 
 </div>

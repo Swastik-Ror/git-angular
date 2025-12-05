@@ -40,6 +40,8 @@ export class Header {
         }else
          {
           this.menuType = 'default'
+          
+          0
         }
       }
     });

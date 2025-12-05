@@ -1,7 +1,9 @@
 table{
-    text-align: left;
+    text-align: center;
     color:blueviolet;
     border-collapse: collapse;
+    margin:auto;
+    margin-bottom: 20px;
 }
 
 table td, table th{
@@ -21,6 +23,9 @@ img{
    color:blueviolet
 }
 
-.product-list{
-    margin-bottom: 150px;
+
+.text-head{
+    text-align: center;
+    padding: 14px;
+     color:blueviolet
 }

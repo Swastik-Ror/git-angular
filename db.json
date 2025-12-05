@@ -87,7 +87,7 @@
       "id": "990a"
     },
     {
-      "name": " Sony Headphones",
+      "name": " Sony Headphone",
       "price": "3400",
       "color": "black",
       "category": "Sony",
@@ -100,7 +100,7 @@
       "price": "1200",
       "color": "white",
       "category": "Apple Brand",
-      "description": "Apple wired earphone with lightning port",
+      "description": "Apple\n wired earphone \nwith lightning port",
       "image": "https://th.bing.com/th/id/OIP.zSE19QOIgTZMG1TSjLI_bQHaHI?w=186&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
       "id": "iZC366_"
     }
@@ -123,6 +123,24 @@
       "email": "shelly@user.com",
       "password": "shelly123",
       "id": 3
+    },
+    {
+      "name": "h",
+      "email": "h",
+      "password": "h",
+      "id": 4
+    },
+    {
+      "name": "dgg",
+      "email": "dfg",
+      "password": "gds",
+      "id": 5
+    },
+    {
+      "name": "fd",
+      "email": "",
+      "password": "djoi",
+      "id": 6
     }
   ],
   "cart": [
@@ -163,18 +181,6 @@
       "id": 12
     },
     {
-      "name": "I Phone 12",
-      "price": "54,000",
-      "color": "Green",
-      "category": "Apple",
-      "description": "Mobile",
-      "image": "https://www.bing.com/th/id/OIP.UKa7qAze3zzAbSiDhp1uZwHaHa?w=194&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
-      "quantity": 1,
-      "userId": 3,
-      "productId": "07bb",
-      "id": 13
-    },
-    {
       "name": " Sony Headphones",
       "price": "3400",
       "color": "black",
@@ -197,6 +203,54 @@
       "userId": 2,
       "productId": "iZC366_",
       "id": 15
+    },
+    {
+      "name": "S23",
+      "price": "50000",
+      "color": "cream",
+      "category": "samsung",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.rMPVMcdZR6wTB1AGRTY9JwHaHa?w=211&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "quantity": 1,
+      "productId": "06b0",
+      "userId": null,
+      "id": 17
+    },
+    {
+      "name": "Apple Earphone",
+      "price": "1200",
+      "color": "white",
+      "category": "Apple Brand",
+      "description": "Apple\n wired earphone \nwith lightning port",
+      "image": "https://th.bing.com/th/id/OIP.zSE19QOIgTZMG1TSjLI_bQHaHI?w=186&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "quantity": 1,
+      "productId": "iZC366_",
+      "userId": null,
+      "id": 18
+    },
+    {
+      "name": "Apple Earphone",
+      "price": "1200",
+      "color": "white",
+      "category": "Apple Brand",
+      "description": "Apple\n wired earphone \nwith lightning port",
+      "image": "https://th.bing.com/th/id/OIP.zSE19QOIgTZMG1TSjLI_bQHaHI?w=186&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "quantity": 1,
+      "userId": 3,
+      "productId": "iZC366_",
+      "id": 19
+    },
+    {
+      "name": "S23",
+      "price": "50000",
+      "color": "cream",
+      "category": "samsung",
+      "description": "Mobile",
+      "image": "https://www.bing.com/th/id/OIP.rMPVMcdZR6wTB1AGRTY9JwHaHa?w=211&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+      "quantity": 1,
+      "userId": 3,
+      "productId": "06b0",
+      "id": 20
     }
   ],
   "orders": [
@@ -207,6 +261,22 @@
       "totalPrice": 4700,
       "userId": 2,
       "id": 1
+    },
+    {
+      "email": "rurt",
+      "address": "rutj",
+      "contact": "rtu",
+      "totalPrice": 4700,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "email": "rurt",
+      "address": "rutj",
+      "contact": "rtu",
+      "totalPrice": 1300,
+      "userId": 3,
+      "id": 3
     }
   ]
 }

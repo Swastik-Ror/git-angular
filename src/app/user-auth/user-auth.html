@@ -1,32 +1,95 @@
-@if (showLogin){
 <div class="user-auth">
-    <h1>User Sign-up</h1>
-    <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
-        <input type="text" class="form-input" placeholder="Enter User Name" name="name" ngModel>
-        <input type="text" class="form-input" placeholder="Enter User Email" name="email" ngModel>
-        <input type="password" class="form-input" placeholder="Enter User Password" name="password" ngModel>
-        <button class="form-button">SignUp</button>
-        <p>Already Have Account ? <a (click)="openLogin()">LogIn</a></p>
-    </form>
+    @if (showLogin){
+    <div class="user-signup">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="leftForm-wrper">
+                    <form #userSignUp="ngForm" class="commons-form" (ngSubmit)="signUp(userSignUp.value)">
+                        <div class="img">
+                        <img src="assets/images/yo-kart-copy.png" alt="logo-img" > 
+                        </div>
+                        <h1>User Sign-up</h1>
+                        <label for="name" class="label-input">UserName:</label>
+                        <input type="text" class="form-input" placeholder="Enter User Name" name="name" ngModel/>
+                        <label for="email" class="label-input">Email:</label>
+                        <input type="text" class="form-input" placeholder="Enter User Email" name="email" ngModel
+                            #email="ngModel" required email />
+                        <p class="invalid-input">
+                            @if(email.invalid && email.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <label for="password" class="label-input">Password:</label>
+                        <input type="password" class="form-input" placeholder="Enter User Password" name="password"
+                            ngModel #password="ngModel" required minlength="4" maxlength="10" />
+                        <p class="invalid-input">
+                            @if(password.invalid && password.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <button [disabled]="userSignUp.invalid" class="form-button">SignUp</button>
+                        <p>Already Have Account ? <a (click)="openLogin()">LogIn</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-6 bg-c">
+                <div class="text-wrper">
+                    <h1>Welcome to Yo-Kart</h1>
+                    <P>Buy. Sell. Earn. Grow. <br>
+                        Turn your products into profit — sign up now.
+                    </P>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    }
+
+    <!-- login -->
+
+    @if (!showLogin){
+    <div class="user-login">
+        <div class="row">
+            <div class="col-sm-6 bg-c">
+                <div class="text-wrper">
+                    <h1>Hello! Welcome Back </h1>
+                    <P>
+                        Your next sale is just a click away.
+                    </P>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-wrper">
+                    <form #userLogin="ngForm" class="commons-form" (ngSubmit)="login(userLogin.value)">
+                        <div class="img">
+                        <img src="assets/images/yo-kart-copy.png" alt="logo-img" > 
+                        </div>
+                        <h1>User Login</h1>
+                        <p class="error-p">{{authError}}</p>
+                        <label for="email" class="label-input">Email:</label>
+                        <input type="text" class="form-input" placeholder="Enter User Email" name="email" ngModel
+                            #email="ngModel" required email />
+                        <p class="invalid-input">
+                            @if(email.invalid && email.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <label for="password" class="label-input">Password:</label>
+                        <input type="password" class="form-input" placeholder="Enter User Password" name="password"
+                            ngModel #password="ngModel" required minlength="4" maxlength="10" />
+                        <p class="invalid-input">
+                            @if(password.invalid && password.touched){
+                            <span>Please Enter Valid Input</span>
+                            }
+                        </p>
+                        <button [disabled]="userLogin.invalid" class="form-button">LogIn</button>
+                        <p>Want to Create Account ?<a (click)="openSignup()">Click Here</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
 </div>
-}
-@if (!showLogin){
-<div class="user-login">
-      <h1>User Login</h1>
-    <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
-        <p class="error-p">{{authError}}</p>
-        <input type="text" class="form-input" placeholder="Enter User Email" name="email" ngModel #email="ngModel" required email/>
-        <p class="invalid-input">
-            @if(email.invalid && email.touched){
-                <span >Please Enter Valid Input</span>
-            }</p>
-        <input type="password" class="form-input" placeholder="Enter User Password" name="password" ngModel #password="ngModel" required minlength="4" maxlength="10" />
-         <p class="invalid-input">
-            @if(password.invalid && password.touched){
-                <span >Please Enter Valid Input</span>
-            }</p>
-        <button [disabled]="userLogin.invalid" class="form-button">LogIn</button>
-        <p>Want to Create Account ?<a (click)="openSignup()">Click Here</a></p>
-    </form>
-</div>
-}

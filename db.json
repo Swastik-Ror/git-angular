@@ -34,21 +34,35 @@
   "products": [
     {
       "name": "S23",
+<<<<<<< HEAD
       "price": "50000",
       "color": "cream",
       "category": "samsung",
       "description": "Mobile",
       "image": "https://www.bing.com/th/id/OIP.rMPVMcdZR6wTB1AGRTY9JwHaHa?w=211&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+=======
+      "price": "₹50000",
+      "color": "Cream",
+      "category": "Samsung",
+      "description": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/51L8W6d-DNL._SL1500_.jpg",
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
       "id": "06b0"
     },
     {
       "name": "Xs gold",
+<<<<<<< HEAD
       "price": "20000",
       "color": "golden",
+=======
+      "price": "₹22000",
+      "color": "Golden",
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
       "category": "Apple",
       "description": "Mobile",
       "image": "https://mobilecity-live.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/01/01013447/G05-3-scaled.jpg",
       "id": "3389"
+<<<<<<< HEAD
     },
     {
       "name": "I Phone 12",
@@ -277,6 +291,8 @@
       "totalPrice": 1300,
       "userId": 3,
       "id": 3
+=======
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     }
   ]
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  <!--<nav class="nav navbar navbar-expand-lg w-100">
 
     <a class="nav-brand" routerLink="/"><img src="assets/images/kart.png" alt="yo-kart" class="logo"></a>
@@ -18,6 +19,15 @@
         </ul>
         }
 
+=======
+<nav class="nav">
+    <h1><a routerLink="./">E-COMM</a></h1>
+
+    @if(menuType==='default'){
+    <div class="nav-search">
+        <input type="text" placeholder="search the product">
+        <button>search</button>
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     </div>
     }
 
@@ -27,6 +37,7 @@
     <ul>
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/seller-auth">Seller</a></li>
+<<<<<<< HEAD
         <li><a routerLink="/user-auth">LogIn/SignUp</a></li>
         <li><a href="#">Cart({{cartItems}})</a>
     </ul>
@@ -43,11 +54,21 @@
     </ul>
     }
 
+=======
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a>
+    </ul>
+    }
+    }
+
+    @switch (menuType) {
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     @case ('seller') {
     <ul>
         <li><a routerLink="/seller-add-product">Add product</a></li>
         <li><a routerLink="/seller-home"> List</a></li>
         <li><a (click)="logoutSeller()" href="#">Logout</a></li>
+<<<<<<< HEAD
         <li><a href="#">{{sellerName | titlecase}}</a></li>
     </ul>
     }
@@ -117,3 +138,10 @@
 
 
 
+=======
+        <li><a href="#">{{sellerName | titlecase}}</a>
+    </ul>
+    }
+    }
+</nav>
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125

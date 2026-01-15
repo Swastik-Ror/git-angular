@@ -15,26 +15,37 @@
           "options": {
             "browser": "src/main.ts",
             "polyfills": [
+<<<<<<< HEAD
               "zone.js"
+=======
+              "zone.js",
+              "@angular/localize/init"
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
+<<<<<<< HEAD
               },
               {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
+=======
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
               }
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
+<<<<<<< HEAD
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+=======
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
             ]
           },
           "configurations": {
@@ -81,13 +92,19 @@
           "options": {
             "polyfills": [
               "zone.js",
+<<<<<<< HEAD
               "zone.js/testing"
+=======
+              "zone.js/testing",
+              "@angular/localize/init"
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
+<<<<<<< HEAD
               },
               {
                 "glob": "**/*",
@@ -97,14 +114,24 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+=======
+              }
+            ],
+            "styles": [
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
               "src/styles.css"
             ]
           }
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": "3fe6a7d2-32d2-4565-b9b9-29c9d4081c40"
   }
 }
+=======
+  }
+}
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125

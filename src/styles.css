@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 @import "bootstrap/dist/css/bootstrap.min.css";
+=======
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 
 body{
     font-family: sans-serif;
@@ -8,6 +11,7 @@ body{
 .container{
     margin-left: 5%;
     margin-right: 5%;
+<<<<<<< HEAD
     padding: 0;
 }
 
@@ -24,6 +28,16 @@ body{
     width: 400px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.546);
+=======
+}
+
+.common-form{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    width:300px;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }
 
 
@@ -32,6 +46,7 @@ body{
     margin-bottom: 20px;
     padding-left: 10px;
     border: 1px solid blueviolet;
+<<<<<<< HEAD
     border-radius: 10px;
     color: blueviolet;
 }
@@ -41,11 +56,21 @@ margin-top: 12px;
 height: 35px;
 border: 1px solid blueviolet;
 border-radius: 10px;
+=======
+    color: blueviolet;
+}
+
+
+.form-button{
+height: 35px;
+border: 1px solid blueviolet;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 cursor: pointer;
 }
 
 
 .message-p{
+<<<<<<< HEAD
     color:green;
     text-align: center;
 }
@@ -94,3 +119,7 @@ app-footer, .footer {
 }
 
  
+=======
+    color:green
+}
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /*.nav{
     display: flex;
     justify-content: space-between;
@@ -13,21 +14,33 @@
 nav.nav {
     background-color: rgb(6, 56, 173);
     
+=======
+.nav{
+    display: flex;
+    justify-content: space-between;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }
 
 .nav h1{
     margin:0;
     font-size: 40px;
+<<<<<<< HEAD
     color: white;
 }
 
 
 
+=======
+    color: blueviolet;
+}
+
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 .nav ul{
     display: inline-flex;
     list-style-type: none;
     padding:0;
     margin:0;
+<<<<<<< HEAD
 
 }
 
@@ -38,13 +51,28 @@ nav.nav {
     color: white;
     cursor: pointer;
     padding-right: 10px;
+=======
+}
+
+.nav li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: blueviolet;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }
 
 
 .nav .nav-search{
     display: flex;
     flex: 1;
+<<<<<<< HEAD
     border-radius: 20px;
+=======
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     margin-top: 5px;
     margin-right: 5%;
     margin-left: 5%;
@@ -73,6 +101,7 @@ border-left: 0px;
 
 h1 a{
     text-decoration: none;
+<<<<<<< HEAD
     color: white;
 }
 
@@ -204,3 +233,7 @@ h1 a{
 
 
 
+=======
+    color: blueviolet;
+}
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125

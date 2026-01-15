@@ -1,9 +1,23 @@
+<<<<<<< HEAD
 table{
     text-align: center;
     color:blueviolet;
     border-collapse: collapse;
     margin:auto;
     margin-bottom: 20px;
+=======
+
+.product-list h1{
+    margin-top: 40px;
+    color: blueviolet;
+}
+
+table{
+    margin-top: 50px;
+    text-align: left;
+    color:blueviolet;
+    border-collapse: collapse;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }
 
 table td, table th{
@@ -19,6 +33,7 @@ img{
 }
 
 .adjust-update-link{
+<<<<<<< HEAD
    margin-left: 5px;
    color:blueviolet
 }
@@ -28,4 +43,8 @@ img{
     text-align: center;
     padding: 14px;
      color:blueviolet
+=======
+   margin-left: 10px;
+   color:blueviolet
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }

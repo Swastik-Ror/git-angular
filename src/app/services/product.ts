@@ -1,14 +1,23 @@
 import { HttpClient } from '@angular/common/http';
+<<<<<<< HEAD
 import { EventEmitter, Injectable } from '@angular/core';
 import { cart, order, product } from '../data-types';
 
+=======
+import { Injectable } from '@angular/core';
+import { product } from '../data-types';
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class Product {
+<<<<<<< HEAD
   cartData= new EventEmitter<product[] |[]>();
+=======
+
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
   constructor(private http:HttpClient){}
   
   addProduct(data:product){
@@ -28,6 +37,7 @@ export class Product {
     return this.http.get<product>(`http://localhost:3000/products/${id}`)
   }
 
+<<<<<<< HEAD
   updateProduct(product:product){
     return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product)
   }
@@ -114,4 +124,9 @@ return this.http.delete('http://localhost:3000/cart/'+cartId);
   cancelOrder(orderId:number){
     return this.http.delete('http://localhost:3000/orders/'+orderId);
   }
+=======
+  updateProduct(product:product){   
+    return this.http.put<product>(`http://localhost:3000/products/${product.id}`,product)
+  }
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }

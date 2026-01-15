@@ -12,6 +12,10 @@ import { RouterLink } from "@angular/router";
   templateUrl: './seller-home.html',
   styleUrl: './seller-home.css'
 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 export class SellerHome {
   icons=faTrash;
   editIcon=faEdit;
@@ -37,6 +41,10 @@ export class SellerHome {
  setTimeout(()=>{
  this.productMessage=undefined
  },3000);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
  }
 
 

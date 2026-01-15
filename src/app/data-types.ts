@@ -16,6 +16,7 @@ export interface product{
     color:string,
     description:string,
     image:string,
+<<<<<<< HEAD
     id:number,
     quantity: undefined | number,
     productId:undefined|number
@@ -49,4 +50,7 @@ export interface order{
     totalPrice:number,
     userId:number,
     id:number|undefined
+=======
+    id:number
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }

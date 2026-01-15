@@ -1,19 +1,27 @@
 import { TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+<<<<<<< HEAD
 import { Product } from '../services/product';
 import { product } from '../data-types';
 
+=======
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 
 
 @Component({
   selector: 'app-header',
+<<<<<<< HEAD
   imports: [RouterLink, TitleCasePipe],
+=======
+  imports: [RouterLink,TitleCasePipe],
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
 export class Header {
   menuType: string = 'default';
+<<<<<<< HEAD
   sellerName: string = "";
   userName:string="";
   searchResult: undefined | product[];
@@ -92,4 +100,36 @@ submitSearch(val:string){
 }
 
 
+=======
+  sellerName:string="";
+
+  constructor(private route:Router){ }
+
+
+  ngOnInit(): void{
+    this.route.events.subscribe((val:any)=>{
+      if(val.url){
+        if(localStorage.getItem('seller') && val.url.includes('seller')){
+          // console.warn('in seller area');
+
+          this.menuType="seller"
+          if(localStorage.getItem('seller')){
+            let sellerstore=localStorage.getItem('seller');
+            let sellerData = sellerstore && JSON.parse(sellerstore)[0];
+            this.sellerName=sellerData.name;
+          }
+
+        }else{
+          this.menuType='default'
+        }
+      }
+    })
+  }
+  
+
+  logoutSeller(){
+    localStorage.removeItem('seller');
+    this.route.navigate(['/'])
+  }
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }

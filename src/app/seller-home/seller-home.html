@@ -1,8 +1,13 @@
 <div class="product-list">
+<<<<<<< HEAD
     <div class="text-head">
     <h1>All Product List</h1>
     <h2>{{productMessage}}</h2>
     </div>
+=======
+    <h1>All Product List</h1>
+    <h2>{{productMessage}}</h2>
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     <table>
         <thead>
             <tr>
@@ -15,13 +20,21 @@
                 <th>Action</th>
             </tr>
         </thead>
+<<<<<<< HEAD
         <tbody>
             <tr *ngFor="let item  of productList">
                 <td><img src="{{item.image}}" /></td>
+=======
+
+        <tbody>
+            <tr *ngFor="let item  of  productList">
+                <td><img src="{{item.image}}"/></td>
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
                 <td>{{item.name}}</td>
                 <td>{{item.price}}</td>
                 <td>{{item.color}}</td>
                 <td>{{item.category}}</td>
+<<<<<<< HEAD
                 <td>{{item.description}}</td>
                 <td>
                     <fa-icon (click)="deleteProduct(item.id)" [icon]="icons"></fa-icon>
@@ -29,5 +42,16 @@
                 </td>
             </tr>
         </tbody>
+=======
+                <td>{{item.description}} </td>
+                <td>
+                    <fa-icon (click)="deleteProduct(item.id)" [icon]="icons"></fa-icon> 
+                    <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}"><fa-icon
+                     [icon]="editIcon"></fa-icon></a>
+                </td>
+            </tr>
+        </tbody>
+
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     </table>
 </div>

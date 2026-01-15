@@ -3,6 +3,10 @@
 }
 
 .sign-up h1, .log-in h1 {
+<<<<<<< HEAD
+=======
+    margin-top: 80px;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
     margin-bottom: 50px;
     color: blueviolet;
 }
@@ -10,13 +14,21 @@
 
 .auth-toggle-link{
     cursor:pointer;
+<<<<<<< HEAD
     font-size: 16px;
     text-align: center;
+=======
+    color:blueviolet;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
 }
 
 .error-p{
     color: red;
     font-size: 14px;
+<<<<<<< HEAD
 }
 .commons-form a{
     color: blueviolet;
@@ -84,3 +96,6 @@ form h1{
 
 
 
+=======
+}
+>>>>>>> 197b2f7fd4797d94a9b7b2bbe65c32b1dcfeb125
